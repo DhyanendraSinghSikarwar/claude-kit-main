@@ -1,0 +1,60 @@
+{
+  "hooks": {
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/notify.py\" Notification || python \"${CLAUDE_PLUGIN_ROOT}/hooks/notify.py\" Notification",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/notify.py\" Stop || python \"${CLAUDE_PLUGIN_ROOT}/hooks/notify.py\" Stop",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/notify.py\" SubagentStop || python \"${CLAUDE_PLUGIN_ROOT}/hooks/notify.py\" SubagentStop",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Write|Edit|MultiEdit|NotebookEdit|Task",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/notify.py\" PreToolUse || python \"${CLAUDE_PLUGIN_ROOT}/hooks/notify.py\" PreToolUse",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/notify.py\" SessionStart || python \"${CLAUDE_PLUGIN_ROOT}/hooks/notify.py\" SessionStart",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

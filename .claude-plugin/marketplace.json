@@ -1,0 +1,19 @@
+{
+  "name": "claude-kit",
+  "owner": {
+    "name": "Aro"
+  },
+  "metadata": {
+    "description": "Personal marketplace of reusable, project-agnostic Claude agents and skills.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "claude-kit",
+      "source": "./",
+      "description": "Project-agnostic agents and skills shared across all my repos.",
+      "version": "0.1.0",
+      "category": "productivity"
+    }
+  ]
+}

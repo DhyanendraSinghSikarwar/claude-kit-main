@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+.pytest_cache/
+
+# FUSE mount artefacts from in-place edits
+.fuse_hidden*

@@ -1,0 +1,9 @@
+{
+  "name": "claude-kit",
+  "version": "0.1.0",
+  "description": "Project-agnostic agents and skills shared across all my repos. Agents delegate token-heavy or mechanical work to cheap models; skills document the procedure explicitly enough for any model to follow without a subagent.",
+  "author": {
+    "name": "Aro"
+  },
+  "keywords": ["agents", "skills", "toolkit", "project-agnostic"]
+}
